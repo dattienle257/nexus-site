@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nexus Privacy Policy</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1e1e1e; --dim: #5c6370; --accent: #5b8def; --card: #f4f5f8; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #1b1d26; --fg: #e6e6ec; --dim: #8b90a3; --accent: #8fb0ff; --card: #23263a; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; } h2 { font-size: 1.1rem; margin: 32px 0 8px; color: var(--accent); }
+  .meta { color: var(--dim); font-size: .9rem; } p, li { margin: 8px 0; } a { color: var(--accent); }
+  .card { background: var(--card); border-radius: 10px; padding: 12px 16px; }
+</style>
+</head>
+<body>
+<main>
+<h1>$ nexus --privacy</h1>
+<p class="meta">Privacy Policy for Nexus – Habits &amp; Work (iOS, iPadOS, macOS) · Effective 27 September 2026</p>
+
+<div class="card"><p><strong>Short version:</strong> Nexus has no accounts, no analytics, no ads and no servers of its own. Everything you enter stays on your device, and optionally in your own private iCloud. We can't see your data.</p></div>
+
+<h2>What Nexus stores</h2>
+<p>Habits and completions, gym workouts and personal records, Kegel training progress, tasks, projects, team members you type in, and your preferences (theme, font, reminders). All of it is stored locally in the app's own database on your device.</p>
+
+<h2>iCloud sync (optional)</h2>
+<p>If you turn on <em>sync.icloud</em> in the config tab, Nexus mirrors that database to the <strong>private</strong> CloudKit database of your own Apple Account so your iPhone, iPad and Mac stay in sync. This data is encrypted in transit and at rest by Apple, is only accessible from devices signed in to your Apple Account, and is never accessible to the developer. Turning the toggle off stops syncing; deleting the app's data from iCloud is done in Settings → Apple Account → iCloud → Manage Storage.</p>
+
+<h2>Apple Health (optional)</h2>
+<p>During gym workouts Nexus can read heart rate, active energy, body weight and resting heart rate from Apple Health, and can save completed workouts back to Health. This only happens if you grant permission, it happens entirely on your device, and health data is never transmitted anywhere by Nexus. You can revoke access any time in Settings → Health → Data Access &amp; Devices.</p>
+
+<h2>Bluetooth (optional)</h2>
+<p>Nexus can connect to a Bluetooth heart-rate sensor to show live heart rate during a workout. The connection is local to your device.</p>
+
+<h2>Notifications</h2>
+<p>Habit and training reminders are local notifications scheduled on your device. No push notification content is sent by us; the app registers for silent pushes only so that iCloud can tell it when synced data changed.</p>
+
+<h2>Backups</h2>
+<p>The <em>export backup</em> command writes a <code>.json</code> file that you choose where to save or share. It contains your data in full; treat it like any personal file.</p>
+
+<h2>What we don't do</h2>
+<ul>
+  <li>No analytics, crash reporting or tracking SDKs.</li>
+  <li>No advertising and no advertising identifiers.</li>
+  <li>No account, sign-up or e-mail collection.</li>
+  <li>No sale or sharing of data with anyone.</li>
+</ul>
+
+<h2>Children</h2>
+<p>Nexus is not directed at children under 13 and does not knowingly collect information from them.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be published at this address with an updated effective date.</p>
+
+<h2>Contact</h2>
+<p>Questions about privacy: see the <a href="support.html">support page</a>.</p>
+</main>
+</body>
+</html>
