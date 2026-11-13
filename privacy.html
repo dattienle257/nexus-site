@@ -3,41 +3,58 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nexus Privacy Policy</title>
+<title>Hubday Privacy Policy</title>
 <style>
-  :root { --bg: #ffffff; --fg: #1e1e1e; --dim: #5c6370; --accent: #5b8def; --card: #f4f5f8; }
-  @media (prefers-color-scheme: dark) { :root { --bg: #1b1d26; --fg: #e6e6ec; --dim: #8b90a3; --accent: #8fb0ff; --card: #23263a; } }
-  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
-  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
-  h1 { font-size: 1.6rem; margin: 0 0 4px; } h2 { font-size: 1.1rem; margin: 32px 0 8px; color: var(--accent); }
-  .meta { color: var(--dim); font-size: .9rem; } p, li { margin: 8px 0; } a { color: var(--accent); }
-  .card { background: var(--card); border-radius: 10px; padding: 12px 16px; }
+  /* Hubday's Daylight palette, and Ember in dark mode. */
+  :root { color-scheme: light dark; --bg: #f5f7fa; --fg: #131c29; --dim: #4f5d6f; --accent: #2556c4; --card: #fdfdfe; --line: #d5dce5; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #1b1715; --fg: #efe7df; --dim: #a99a8d; --accent: #d8743e; --card: #241e1b; --line: #3a312b; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 64px; }
+  h1 { font-size: 1.8rem; margin: 0 0 4px; } h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+  .meta { color: var(--dim); font-size: .95rem; } p, li { margin: 8px 0; } a { color: var(--accent); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; }
 </style>
 </head>
 <body>
 <main>
-<h1>$ nexus --privacy</h1>
-<p class="meta">Privacy Policy for Nexus – Habits &amp; Work (iOS, iPadOS, macOS) · Effective 27 September 2026</p>
+<h1>Hubday Privacy Policy</h1>
+<p class="meta">Privacy Policy for Hubday – Time blocks, focus &amp; projects (iOS, iPadOS, macOS) · Effective 13 November 2026</p>
 
-<div class="card"><p><strong>Short version:</strong> Nexus has no accounts, no analytics, no ads and no servers of its own. Everything you enter stays on your device and, with iCloud sync on (the default), in your own private iCloud. We can't see your data.</p></div>
+<div class="card"><p><strong>Short version:</strong> Hubday has no accounts, no analytics, no ads and no servers of its own. What you enter stays on your device and, with iCloud sync on (the default), in your own private iCloud — except what you choose to send elsewhere: time blocks you add to a calendar, place searches and travel estimates (Apple Maps), workouts you save to Apple Health, and the YouTube videos you play or search for. What Hubday reads from Apple Health and from a heart-rate sensor stays on your device. We can't see your data.</p></div>
 
-<h2>What Nexus stores</h2>
-<p>Habits and completions, gym workouts and personal records, Kegel training progress, tasks, projects, team members you type in, and your preferences (theme, font, reminders). All of it is stored locally in the app's own database on your device.</p>
+<h2>What Hubday stores</h2>
+<p>Work tasks and their time blocks, projects, team members you type in, daily work records and focus stretches, personal to-dos, habits and completions, gym workouts and personal records, pelvic floor training progress, meditation sessions, journal entries, ideas and the pictures you attach to them, and your preferences (appearance, reminders, the sites and apps to block while you focus). All of it is kept in the app's own database and settings on your device (the list of sites to block also in a keychain item that Hubday's Safari extensions read). Items you delete wait 30 days in Recently deleted before they are removed for good.</p>
 
 <h2>iCloud sync (on by default)</h2>
-<p>iCloud sync is on by default. While <em>sync.icloud</em> in the config tab is on, Nexus mirrors that database to the <strong>private</strong> CloudKit database of your own Apple Account so your iPhone, iPad and Mac stay in sync. This data is encrypted in transit and at rest by Apple, is only accessible from devices signed in to your Apple Account, and is never accessible to the developer. Turning the toggle off stops syncing; deleting the app's data from iCloud is done in Settings → Apple Account → iCloud → Manage Storage.</p>
+<p>iCloud sync is on by default. While <em>Sync with iCloud</em> in Settings is on, Hubday mirrors that database to the <strong>private</strong> CloudKit database of your own Apple Account so your iPhone, iPad and Mac stay in sync, and keeps a few preferences (appearance, the sites and apps to block, timer and alert defaults) in your own iCloud key-value storage. This data is encrypted in transit and at rest by Apple, is only accessible from devices signed in to your Apple Account, and is never accessible to the developer. Health data is not part of it (see below). Turning the switch off stops syncing; deleting the app's data from iCloud is done in Settings → Apple Account → iCloud → Manage Storage.</p>
 
 <h2>Apple Health (optional)</h2>
-<p>During gym workouts Nexus can read heart rate, active energy, body weight and resting heart rate from Apple Health, and can save completed workouts back to Health. This only happens if you grant permission, it happens entirely on your device, and health data is never transmitted anywhere by Nexus. You can revoke access any time in Settings → Health → Data Access &amp; Devices.</p>
+<p>During gym workouts Hubday can read heart rate, active energy, body weight and resting heart rate from Apple Health, and can save the workouts you choose to save back to Apple Health. This only happens with your permission. What Hubday reads from Apple Health stays on your device: it is shown in the app, is not synced to iCloud, and is never sent to us or anyone else. A workout you save goes to Apple Health, which keeps it under Apple's own privacy rules. You can revoke access any time in Settings → Privacy &amp; Security → Health → Hubday.</p>
 
-<h2>Bluetooth (optional)</h2>
-<p>Nexus can connect to a Bluetooth heart-rate sensor to show live heart rate during a workout. The connection is local to your device.</p>
+<h2>Bluetooth heart-rate sensor (optional)</h2>
+<p>Hubday can connect to a Bluetooth heart-rate sensor to show your heart rate during a workout. The connection is local to your device, and the heart rate it records stays on your device: it is not synced to iCloud and is never sent to us or anyone else.</p>
+
+<h2>Calendar (optional)</h2>
+<p>If you turn on <em>Add time blocks to Calendar</em> (in Settings, or in the calendar's own settings), Hubday asks for access to your calendars and then mirrors the time blocks of your work tasks into one calendar of your choosing (by default a new Hubday calendar, in iCloud when you're signed in). Hubday only writes events it created itself; if you move or resize one of them in Calendar, the task's time block follows. With access granted, the in-app calendar also shows your other calendars' events read-only, so you can plan around them; those events are never copied, stored or sent anywhere. Hubday works through Apple's EventKit framework on your device; the events it adds then sync like any other event in that calendar — through iCloud for the calendar Hubday makes, or through the account of a calendar you picked. You can hide calendars in the app, turn the mirroring off (optionally removing the events Hubday created &mdash; and the calendar it created itself only when it was made on this device and nothing but Hubday's events is in it; a calendar of your own is never deleted), or revoke access any time in Settings → Privacy &amp; Security → Calendars.</p>
+
+<h2>Location (optional)</h2>
+<p>A work task can have a place and a travel time. Places are found with Apple's MapKit search as you type, and the travel estimate comes from Apple Maps' directions service; both requests go to Apple, not to us, and the place you pick is stored with the task on your device (and in your private iCloud database if sync is on). Hubday asks for your location only when you tap <em>Current location</em> as the starting point of a trip: it reads it once, Apple turns it into a place name, and that is saved with the task as the trip's start; it never tracks you in the background. "Open in Apple Maps" / "Open in Google Maps" hand that app or web site the trip — the two places' coordinates, the travel mode and, for Apple Maps, the destination's name — and nothing else. You can revoke location access any time in Settings → Privacy &amp; Security → Location Services.</p>
 
 <h2>Notifications</h2>
-<p>Habit and training reminders are local notifications scheduled on your device. No push notification content is sent by us; the app registers for silent pushes only so that iCloud can tell it when synced data changed.</p>
+<p>Task reminders, calendar alerts, the focus timer, meditation bells and habit and pelvic floor reminders are local notifications scheduled on your device. No push notification content is sent by us: the app registers for pushes only so that iCloud can tell it when synced data changed, and so that, with iCloud sync on, a rest that ends on one of your devices can be announced on your others ("rest is over") through your own private iCloud database.</p>
+
+<h2>Website blocker (optional)</h2>
+<p>The focus timer can block websites you list (YouTube, say) in Safari while a focus stretch is running. The list is kept on your device with your other preferences &mdash; in your own iCloud key-value storage too when iCloud sync is on, so your devices share it, and in a backup file when you export one. Two Safari extensions come with the app for this: a content blocker (listed as <em>Hubday</em> in iOS Settings and as <em>Hubday Focus Blocker</em> in Safari's settings on the Mac) and a web extension, <em>Hubday Focus Guard</em> (see <em>Focus guard</em> below); nothing is blocked until you switch them on yourself in Safari's settings. To block, Hubday hands Safari a set of blocking rules through the content blocker. A content blocker cannot see the pages you open or your browsing history: Safari applies the rules on its own and tells Hubday nothing about what you visit or what was blocked, and nothing about your browsing is stored or sent anywhere. Other browsers aren't covered. You can turn blocking off in the focus timer, or switch either extension off any time in Settings → Apps → Safari → Extensions (iOS 17: Settings → Safari → Extensions; on the Mac: Safari → Settings → Extensions).</p>
+<p><strong>Focus guard.</strong> Safari lets you reload a page without content blockers, which switches the blocking rules off for that page. The <em>Hubday Focus Guard</em> extension keeps a listed site closed anyway until you stop the stretch. To do that it needs Safari's permission to run on the websites you visit: it reads the address of each page you open and compares it, on your device, with your block list. It shows its own "blocked" page in place of a listed site during a stretch and leaves every other page alone. It keeps a copy of your list and the time the current stretch ends in the extension's own storage in Safari, and it notes the time it last checked a page (only the time &mdash; never the address), so the app can tell you the guard is working. It never records which pages you visit, and it sends nothing anywhere: not to us, and not to anyone else. You can switch it off, or limit the websites it may run on, in Settings → Apps → Safari → Extensions → Hubday Focus Guard (on the Mac: Safari → Settings → Extensions).</p>
+
+<h2>Blocking apps (Mac, optional)</h2>
+<p>On the Mac, the focus timer can also hide apps you choose (another browser, a chat app, a game) while a focus stretch is running. To show you the apps you can pick from and to find the ones you picked, Hubday reads the names, bundle identifiers and icons of the apps in your Applications folders and of the apps running on your Mac &mdash; on your Mac only. During a stretch it hides a chosen app that is open, opens or comes to the front, and it stops when the stretch ends; it never quits an app, and it reads nothing from an app but its name, identifier and icon. Your list of apps is kept with your other preferences &mdash; in your own iCloud key-value storage too when iCloud sync is on, so your Macs share it, and in a backup file when you export one. Which apps you opened or Hubday hid is not stored or sent anywhere. You can turn app blocking off, or change the list, in the focus timer.</p>
+
+<h2>Exercise videos (optional)</h2>
+<p>A gym exercise's demo is a YouTube video, played in YouTube's embedded player (youtube-nocookie.com) when you start it; <em>Find a video</em> searches YouTube inside the app. Those requests go to YouTube (Google) under YouTube's own privacy policy. Hubday stores only the video's link with the exercise, and its YouTube search window keeps no cookies or history.</p>
 
 <h2>Backups</h2>
-<p>The <em>export backup</em> command writes a <code>.json</code> file that you choose where to save or share. It contains your data in full; treat it like any personal file.</p>
+<p><em>Export backup</em> in Settings writes a <code>.json</code> file that you choose where to save or share. It contains your data in full; treat it like any personal file.</p>
 
 <h2>What we don't do</h2>
 <ul>
@@ -48,7 +65,7 @@
 </ul>
 
 <h2>Children</h2>
-<p>Nexus is not directed at children under 13 and does not knowingly collect information from them.</p>
+<p>Hubday is not directed at children under 13 and does not knowingly collect information from them.</p>
 
 <h2>Changes</h2>
 <p>If this policy changes, the new version will be published at this address with an updated effective date.</p>
